@@ -1,79 +1,27 @@
-Description
+# EventApp
 
-Build an Angular app where the admin can view and manage employees.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.9.
 
- 
+## Development server
 
-Scenario:
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-You are working as a web developer and your company has decided to launch a new app called Event Management. The administration team of the organization can view and add their resources such as employees and keep their data saved for future references.
+## Code scaffolding
 
-The backend development has been outsourced as APIs and the frontend will be developed in-house by using Angular as a client-side framework. During the sprint planning, you agree to lead this project and develop an app that will let the admin find employees using APIs outsourced by backend engineers.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-The tasks that need to be performed by you are:
+## Build
 
-Build the application using Angular
-Create a temporary database server for CRUD operation using a JSON local server
-Validate all employee management forms using Form Validation
-Render the application as a Single Page Application
- 
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-Tools Required:
+## Running unit tests
 
-Angular
-Bootstrap
- 
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-The Following Requirements Should Be Met:
+## Running end-to-end tests
 
-Admin login page where admin can change the password after logging in if he wants to.
-Admin can view a master list of employee details.  
-Admin can create, remove, update, or delete employee details.
- 
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-Refer the following steps for JSON server creation:
+## Further help
 
-1) Execute the command given below:
-npm install -g json-server
-
-2) Create a file with the name db.json and add the code given below:
-{
-    "employees": [
-      {
-        "id": 1,
-        "first_name": "Sebastian",
-        "last_name": "Eschweiler",
-        "email": "sebastian@codingthesmartway.com"
-      },
-      {
-        "id": 2,
-        "first_name": "Steve",
-        "last_name": "Palmer",
-        "email": "steve@codingthesmartway.com"
-      },
-      {
-        "id": 3,
-        "first_name": "Ann",
-        "last_name": "Smith",
-        "email": "ann@codingthesmartway.com"
-      }
-    ]
-  }
- 
-3) Add the code given below in the script section of your package.json file in the root folder of your Angular application
-
-    "json:server": "json-server --watch db.json"
-
-Note: Before executing your Angular Application, run the command given below to start your json server:
-npm run json-server
-
- 
-
-Sample URI to perform CRUD operations after running the json-server:
-
-HTTP Methods	URI	Description
-GET	/employees	Get all employees
-GET	/employees/1	Get employee by ID
-POST	/employees	Add employee
-PUT	/employees	Update employee
-DELETE	/employees/1	Delete employee by ID
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
